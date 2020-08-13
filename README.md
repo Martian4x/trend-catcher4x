@@ -1,0 +1,2 @@
+This is an mt4 forex trading robot intended to catch price trends. It contains multiple moving averages and some oscillators. Each branch has its differences in-terms of which indicator is used and for what purpose.
+Please make sure you test the important parameters and test it on the demo for at least a month before trading on the live account. Also, keep an eye to this repo because I will be pushing changes and updates to make the Expert Advisor more profitable.
