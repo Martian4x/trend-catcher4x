@@ -7,6 +7,7 @@
 // Preprocessor 
 #include <TradingFunctions.mqh>
 // External Variables 
+extern int MagicNumber = 11121; 
 extern bool DynamicLotSize = true; 
 extern bool AllowTrailingStop = true; 
 extern bool UseTrendMA = true; 
@@ -14,11 +15,10 @@ extern double EquityPercent = 5;
 extern double FixedLotSize = 0.01;
 extern double StopLoss = 100; 
 extern double TakeProfit = 300; 
-//extern int TrailingStop = 100; 
-//extern int MinimumProfit = 30;
+extern int TrailingStop = 100; 
+extern int MinimumProfit = 30;
 extern int Slippage = 5; 
 extern int AdjustPips = 3;
-extern int MagicNumber = 1112; 
 extern int FastMAPeriod = 5; 
 extern int SlowMAPeriod = 10;
 extern int TrendMAPeriod = 60;
@@ -27,10 +27,7 @@ extern int RSIPeriod = 10;
 // extern int ADXCrossValue = 25;
 // Strategy 1, EA Version 1, TradingFunctions 1, Symbol, Properties 1
 // Strategy 1, EA Version 1, TradingFunctions 1, Symbol, Properties 2
-//extern double StopLoss = 150; 
-//extern double TakeProfit = 400; 
-//extern int TrailingStop = 150; 
-//extern int MinimumProfit = 150;
+
 //extern int ADXPeriod = 14// >25
 // Global Variables 
 int BuyTicket; 
@@ -39,8 +36,6 @@ double UsePoint;
 int UseSlippage;
 string StatusComment = "";
 string AccountType;
-int TrailingStop = StopLoss;
-int MinimumProfit = TrailingStop;
 string TicketNumber;
 bool TrendMABuy;
 bool TrendMASell;
